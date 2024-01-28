@@ -1,0 +1,75 @@
+.layout {
+  width: 1920px;
+  height: 1080px;
+  display: grid;
+  grid:
+    "header header header" auto
+    "leftSide body rightSide" 1fr
+    "footer footer footer" auto
+    / auto 1fr auto;
+  gap: 8px;
+  border: 2px solid black; /* Borde alrededor de todo el layout */
+}
+
+.header, .leftSide, .body, .rightSide, .footer {
+  border: 2px solid red; /* Borde para cada sección */
+  padding: 8px; /* Espacio interno para cada sección */
+}
+
+.header { grid-area: header; }
+.leftSide { grid-area: leftSide; }
+.body { grid-area: body; }
+.rightSide { grid-area: rightSide; }
+.footer { grid-area: footer; }
+
+
+
+.header {
+  height: 405px;
+}
+
+
+.leftSide{
+  width: 404px;
+}
+
+.body{
+  width: 1003px;
+}
+
+.rightSide{
+  width: 440px;
+}
+
+
+.footer{
+  height: 75px;
+}
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-areas:
+            'header'
+            'body'
+            'leftSide'
+            'rightSide'
+            'footer';
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout {
+        grid-template-areas:
+            'header'
+            'body'
+            'footer';
+        grid-template-columns: 1fr;
+    }
+
+    .leftSide, .rightSide {
+        display: none; /* Ocultar sidebars en pantallas muy pequeñas */
+    }
+}
