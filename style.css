@@ -64,9 +64,52 @@ h1 {
   margin: 10px;
 }
 
+.gallery {
+  display: flex;            /* Activar Flexbox */
+  flex-wrap: wrap;          /* Permitir múltiples líneas si es necesario */
+  justify-content: center;  /* Centrar elementos horizontalmente */
+  align-items: center;      /* Centrar elementos verticalmente */
+  gap: 10px;                /* Espacio entre las imágenes */
+  padding: 10px;            /* Espacio alrededor del contenedor */
+}
+
+.gallery img {
+  flex: 1 1 200px;          /* Crecer, encoger y base de 200px */
+  max-width: 20%;          /* Para asegurar responsividad */
+  height: auto;             /* Mantener la proporción de las imágenes */
+  object-fit: cover;        /* Cubrir el área asignada sin perder proporciones */
+}
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
   /* ... tus estilos responsivos existentes ... */
+
+  .gallery {
+    display: flex;            /* Activar Flexbox */
+    flex-wrap: wrap;          /* Permitir múltiples líneas si es necesario */
+    justify-content: center;  /* Centrar elementos horizontalmente */
+    align-items: center;      /* Centrar elementos verticalmente */
+    gap: 10px;                /* Espacio entre las imágenes */
+    padding: 10px;            /* Espacio alrededor del contenedor */
+  }
+  
+  .gallery img {
+    flex: 1 1 200px;          /* Crecer, encoger y base de 200px */
+    max-width: 50%;          /* Para asegurar responsividad */
+    height: auto;             /* Mantener la proporción de las imágenes */
+    object-fit: cover;        /* Cubrir el área asignada sin perder proporciones */
+  }
+  
+
+
+
+
+
+
+
+
+
+
 }
 
 /* Estilos para Información Personal, Galería de Fotos y Muro */
@@ -90,6 +133,10 @@ h1 {
   transition: transform 0.3s;
   cursor: pointer;
 }
+
+
+
+
 
 /* Estilos para el Muro */
 .post {
