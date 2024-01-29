@@ -1,42 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - maqueta para facebook</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener tu archivo CSS en la misma carpeta -->
-    <style>
-        /* Puedes poner tus estilos CSS aquí o en un archivo externo */
-    </style>
+    <title>Perfil de Facebook</title>
 </head>
 <body>
-    <section class="layout">
-        <header class="header">
-            <h1>My Responsive Layout</h1>
-        </header>
-        <aside class="leftSide">Left Sidebar</aside>
-        <main class="body">
-            <h2>Welcome to the Body Content</h2>
-            <p>This is the main area of the layout, containing interesting content and information.</p>
-        </main>
-        <aside class="rightSide">Right Sidebar</aside>
-        <footer class="footer">
-            <p>&copy; 2024 My Website</p>
-        </footer>
-    </section>
-</body>
-</html>
-<!-- partial -->
+    <header>
+        <nav class="navbar">
+            <!-- Elementos de navegación (ejemplo simplificado) -->
+            <div class="navbar-logo">Facebook</div>
+        </nav>
+    </header>
+    <main>
+        <div class="profile-header">
+            <img src="https://scontent.fnqn4-1.fna.fbcdn.net/v/t39.30808-6/421335481_7413071038784253_9068070540482351749_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=lMoPj8m4fw0AX-AT89y&_nc_ht=scontent.fnqn4-1.fna&oh=00_AfDbVjkQRC-BN_sQ-0g4mOs7ZHPqlhZZvCvTJwBOr3yqjQ&oe=65B239C8" alt="Foto de portada" class="cover-photo">
+            <img src="https://scontent.fnqn4-1.fna.fbcdn.net/v/t39.30808-6/421335481_7413071038784253_9068070540482351749_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=lMoPj8m4fw0AX-AT89y&_nc_ht=scontent.fnqn4-1.fna&oh=00_AfDbVjkQRC-BN_sQ-0g4mOs7ZHPqlhZZvCvTJwBOr3yqjQ&oe=65B239C8" alt="Foto de perfil" class="profile-photo">
+            <h1>Nombre del Usuario</h1>
+        </div>
+        <div class="profile-body">
+            <aside class="left-sidebar">
+                <!-- Información del perfil o enlaces -->
+            </aside>
+            <section class="profile-main">
+                <!-- Publicaciones y actividades del usuario -->
+            </section>
+            <aside class="right-sidebar">
+                <!-- Otras informaciones o widgets -->
+            </aside>
+        </div>
+    </main>
+  <!-- Dentro de <section class="profile-main"> -->
+
+<!-- Sección de Información Personal -->
+<div class="personal-info">
+    <h2>Información Personal</h2>
+    <p><strong>Ciudad:</strong> Ciudad Ejemplo</p>
+    <p><strong>Estudió en:</strong> Universidad Ejemplo</p>
+    <p><strong>Trabaja en:</strong> Empresa Ejemplo</p>
+    <!-- Más información personal aquí -->
+</div>
+
+<!-- Sección de Fotos -->
+<div class="photo-gallery">
+    <h2>Fotos</h2>
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Foto 1">
+        <img src="photo2.jpg" alt="Foto 2">
+        <img src="photo3.jpg" alt="Foto 3">
+        <!-- Más fotos aquí -->
+    </div>
+</div>
+
+  <!-- Dentro de <section class="profile-main"> -->
+
+<!-- Sección del Muro -->
+<div class="wall">
+    <h2>Muro</h2>
+    <div class="post">
+        <div class="post-header">
+            <img src="user_photo.jpg" alt="Usuario" class="post-avatar">
+            <div class="post-user-info">
+                <strong>Nombre de Usuario</strong>
+                <p>Fecha de publicación</p>
+            </div>
+        </div>
+        <div class="post-content">
+            <p>Este es un ejemplo de una publicación en el muro. Aquí puede ir texto, imágenes, enlaces, etc.</p>
+        </div>
+        <!-- Puedes agregar más elementos como botones de "Me gusta", "Comentar", etc. -->
+    </div>
+    <!-- Más publicaciones aquí -->
+</div>
+
   
+  
+  
+    <footer>
+        <!-- Pie de página -->
+    </footer>
 </body>
+<link rel="stylesheet" href="style.css">
+
 </html>
