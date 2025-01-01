@@ -282,6 +282,38 @@
                 max-width: 100%;
             }
         }
+
+/* Estilo básico para evitar el scroll lateral */
+html, body {
+    margin: 0; /* Elimina los márgenes */
+    padding: 0; /* Elimina el relleno */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+}
+
+/* Asegúrate de que todos los elementos se ajusten al ancho del viewport */
+* {
+    box-sizing: border-box; /* Incluye relleno y borde dentro del tamaño del elemento */
+}
+
+/* Opcional: Manejo de imágenes y otros contenidos que puedan desbordar */
+img, iframe, video {
+    max-width: 100%; /* Limita el ancho de los elementos multimedia */
+    height: auto; /* Mantiene las proporciones */
+}
+
+/* Prevención adicional de desbordes */
+.container {
+    max-width: 100vw; /* Asegura que los contenedores no excedan el ancho de la ventana */
+    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+}
+
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
